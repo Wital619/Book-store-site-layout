@@ -19,7 +19,7 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: {
               minimize: {
                 safe: true
@@ -71,7 +71,7 @@ module.exports = {
       template: path.resolve(__dirname, 'src/index.html'),
     }),
     new CopyWebpackPlugin([
-      { from: 'src/images/' }
+      { from: 'src/images/', to: 'images/' }
     ]),
     new webpack.HotModuleReplacementPlugin()
   ],

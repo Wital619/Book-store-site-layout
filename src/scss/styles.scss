@@ -1,3 +1,165 @@
 @import 'base/reset';
 @import 'base/variables';
 @import 'base/breakpoints';
+
+.bs-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  min-height: calc(100% - 60px);
+  margin: 10px auto 50px;
+  padding-bottom: $footer-height;
+}
+
+/* HEADER ********************************************************************************************************** */
+
+.bs-header {
+	position: relative;
+  height: $header-height;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  border-radius: 6px 6px 0 0;
+  overflow: hidden;
+  background-color: #2f364a;
+  color: #fff;
+}
+
+.bs-dots__dot {
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin-right: 4px;
+  border-radius: 50%;
+}
+
+.bs-dots__dot--red { background-color: #e76847; }
+.bs-dots__dot--orange { background-color: #fabf00; }
+.bs-dots__dot--blue { background-color: #52bea6; }
+
+.bs-header__title {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+  color: #78829d;
+	font-size: 12px;
+
+  i {
+    font-size: 13px;
+  }
+}
+
+.bs-header__nav {
+	margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.bs-header__nav-item {
+	font-size: 13px;
+	color: #78829d;
+
+	&:last-child {
+		margin-right: 18px;
+
+		&::before {
+			content: '';
+			display: inline-block;
+			width: 4px;
+			height: 4px;
+			margin: 0 12px;
+			vertical-align: middle;
+			background-color: #19202e;
+		}
+	}
+}
+
+.bs-user {
+	position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 160px;
+	background-color: $main-blue;
+	padding: 0 22px 0 12px;
+}
+
+.bs-user__img {
+  width: 31px;
+  height: 32px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.bs-user__name {
+	position: absolute;
+	left: 50%;
+	margin: 0;
+	transform: translateX(-50%);
+	font-size: 13px;
+	font-weight: 300;
+}
+
+.bs-user__chevron {
+	font-size: 13px;
+	cursor: pointer;
+}
+
+/* FOOTER ********************************************************************************************************** */
+
+.bs-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+	right: 0;
+	display: flex;
+	justify-content: flex-end;
+	height: $footer-height;
+	border-radius: 0 0 6px 6px;
+  overflow: hidden;
+  background-color: #181e2c;
+}
+
+.bs-footer__icons {
+	height: 100%;
+} 
+
+.bs-footer__icon {
+	float: left;
+	width: 55px;
+	height: inherit;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	cursor: pointer;
+}
+
+.bs-footer__icon--dark {
+	background-color: #1f2637;
+}
+
+.bs-footer__icon--blue {
+	background-color: $main-blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
