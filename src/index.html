@@ -19,7 +19,7 @@
       <span class="bs-dots__dot bs-dots__dot--blue"></span>
     </div>
     <div class="bs-header__title">
-      <i class="fas fa-star"></i>
+      <span class="bs-header__title-icon"><i class="fas fa-book"></i></span>
       MyBookUp
     </div>
     <ul class="bs-header__nav">
@@ -32,9 +32,74 @@
 			<span class="bs-user__chevron"><i class="fa fa-chevron-circle-down"></i></span>
 		</div>
   </header>
-  <main class="bs-content">
-    Content
-  </main>
+  <div class="bs-content-wrapper">
+    <aside class="bs-sidebar">
+			<section class="bs-add-book bs-panel">
+				<button class="bs-btn bs-btn--add-book">
+					<span class="bs-btn__plus-icon">
+						<i class="fas fa-plus"></i>
+					</span>
+					ADD A BOOK
+				</button>
+			</section>
+			<div class="bs-bottom-line"></div>
+			<ul class="bs-menu-list bs-panel">
+				<li class="bs-menu-list__item">
+					<span class="bs-menu-list__icon"><i class="fas fa-book"></i></span>
+					<a href="#" class="bs-menu-list__link">Now Reading</a>
+				</li>
+				<li class="bs-menu-list__item">
+					<span class="bs-menu-list__icon"><i class="fas fa-globe-americas"></i></span>
+					<a href="#" class="bs-menu-list__link">Browse</a>
+				</li>
+				<li class="bs-menu-list__item">
+					<span class="bs-menu-list__icon"><i class="fas fa-shopping-cart"></i></span>
+					<a href="#" class="bs-menu-list__link">Buy Books</a>
+				</li>
+				<li class="bs-menu-list__item">
+					<span class="bs-menu-list__icon"><i class="fas fa-star"></i></span>
+					<a href="#" class="bs-menu-list__link">Favourite Books</a>
+				</li>
+				<li class="bs-menu-list__item">
+					<span class="bs-menu-list__icon"><i class="fas fa-th-list"></i></span>
+					<a href="#" class="bs-menu-list__link">Wishlist</a>
+				</li>
+				<li class="bs-menu-list__item">
+					<span class="bs-menu-list__icon"><i class="fas fa-clock"></i></span>
+					<a href="#" class="bs-menu-list__link">History</a>
+				</li>
+			</ul>
+			<div class="bs-bottom-line"></div>
+			<ul class="bs-book-types-list bs-panel">
+				<li class="bs-book-types-list__item">Must Read Titles</li>
+				<li class="bs-book-types-list__item">Best Of List</li>
+				<li class="bs-book-types-list__item">Classic Novels</li>
+				<li class="bs-book-types-list__item">Non Fiction</li>
+			</ul>
+			<div class="bs-bottom-line"></div>
+			<ul class="bs-actions-list">
+				<li class="bs-actions-list__item">
+					<span class="bs-actions-list__icon"><i class="fas fa-clock"></i></span>
+					<div class="bs-actions-list__info">
+						<p class="bs-actions-list__desc">
+							You added <span>Fight Club</span> by <span>Chuck Palahniuk</span> to your <span>Must Read Titles</span>
+						</p>
+						<span class="bs-actions-list__time">24 minutes ago</span>
+					</div>
+				</li>
+				<li class="bs-actions-list__item">
+					<span class="bs-actions-list__icon"><i class="fas fa-clock"></i></span>
+					<div class="bs-actions-list__info">
+						<p class="bs-actions-list__desc">You added <span>The Trial</span> by <span>Franz Kafka</span> to your <span>Must Read Titles</span></p>
+						<span class="bs-actions-list__time">48 minutes ago</span>
+					</div>
+				</li>
+			</ul>
+		</aside>
+		<main class="bs-content" tabindex="1">
+			Content
+		</main>
+  </div>
   <footer class="bs-footer">
     <div class="bs-footer__icons">
 			<span class="bs-footer__icon bs-footer__icon--dark"><i class="fas fa-question-circle"></i></span>

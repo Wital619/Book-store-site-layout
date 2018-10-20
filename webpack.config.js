@@ -18,22 +18,18 @@ module.exports = {
         test: /\.(css|sass|scss)$/,
         use: [
           MiniCssExtractPlugin.loader,
+					'css-loader',
           {
-            loader: 'css-loader',
+            loader: 'postcss-loader',
             options: {
-              minimize: {
-                safe: true
-              }
-            }
-          },
-          {
-            loader: "postcss-loader",
-            options: {
-              autoprefixer: {
-                browsers: ["last 2 versions"]
-              },
+							ident: 'postcss',
               plugins: () => [
-                autoprefixer
+                autoprefixer({
+									browsers: [
+										'>1%',
+										'last 4 versions'
+									]
+								}),
               ]
             },
           },

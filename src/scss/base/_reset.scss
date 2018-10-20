@@ -7,20 +7,24 @@
 html, body {
   height: 100%;
   margin: 0;
-  padding: 0;
-  overflow: auto;
+	padding: 0;
 }
 
 body {
   font: 16px/1 Arial, sans-serif;
   background: white;
-  color: black;
+	color: black;
+	overflow: hidden;
 }
 
 ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+}
+
+a {
+	text-decoration: none;
 }
 
 button {
