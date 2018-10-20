@@ -1,0 +1,29 @@
+.bs-footer {
+	display: flex;
+	justify-content: flex-end;
+	height: $footer-height;
+  background-color: #181e2c;
+}
+
+.bs-footer__icons {
+	height: 100%;
+} 
+
+.bs-footer__icon {
+	float: left;
+	width: 55px;
+	height: inherit;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	cursor: pointer;
+}
+
+.bs-footer__icon--dark {
+	background-color: #1f2637;
+}
+
+.bs-footer__icon--blue {
+	background-color: $main-blue;
+}

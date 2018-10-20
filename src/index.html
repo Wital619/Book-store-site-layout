@@ -20,11 +20,15 @@
     </div>
     <div class="bs-header__title">
       <span class="bs-header__title-icon"><i class="fas fa-book"></i></span>
-      MyBookUp
+      MyBookApp
     </div>
     <ul class="bs-header__nav">
-      <li class="bs-header__nav-item">Help Center</li>
-			<li class="bs-header__nav-item">Our Support</li>
+      <li class="bs-header__nav-item">
+				<a class="bs-header__nav-link" href="#">Help Center</a>
+			</li>
+			<li class="bs-header__nav-item">
+				<a class="bs-header__nav-link" href="#">Our Support</a>
+			</li>
 		</ul>
 		<div class="bs-user">
 			<img class="bs-user__img" src="images/avatar-01.jpg" alt="avatar">
@@ -97,7 +101,21 @@
 			</ul>
 		</aside>
 		<main class="bs-content" tabindex="1">
-			Content
+			<div class="bs-content__head-wrapper">
+				<h2 class="bs-content__header">Browse Available Books</h1>
+			</div>
+			<div class="bs-content__filters-wrapper">
+				<ul class="bs-filters">
+					<li class="bs-filters__item">All Books</li>
+					<li class="bs-filters__item">Most Recent</li>
+					<li class="bs-filters__item">Most Popular</li>
+					<li class="bs-filters__item">Free Books</li>
+				</ul>
+				<div class="bs-search">
+					<input class="bs-search__input" type="text" placeholder="Enter Keywords">
+					<span class="bs-search__icon"><i class="fas fa-search"></i></span>
+				</div>
+			</div>
 		</main>
   </div>
   <footer class="bs-footer">

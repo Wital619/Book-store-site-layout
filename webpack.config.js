@@ -35,7 +35,11 @@ module.exports = {
           },
           'sass-loader'
         ]
-      }
+			},
+			{ 
+				test: /\.(woff|eot|ttf)$/, 
+				loader: 'url-loader'
+			},
     ]
   },
   optimization: {
