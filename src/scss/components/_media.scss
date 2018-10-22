@@ -1,7 +1,5 @@
 @import 'base/breakpoints';
 
-// HEADER
-
 .bs-header,
 .bs-footer {
 	@include breakpoint(mobileonly) {
@@ -71,8 +69,6 @@
 	}	
 }
 
-// sidebar
-
 .bs-sidebar {
 	@include breakpoint(tablet) {
 		display: none;
@@ -81,8 +77,6 @@
 		z-index: 10;
 	}
 }
-
-// top content
 
 .bs-content__head-wrapper {
 	@include breakpoint(mobileonly) {
@@ -125,8 +119,6 @@
 	}
 }
 
-// main content
-
 .bs-content-wrapper {
 	@include breakpoint(mobileonly) {
 		height: calc(100vh - 70px);
@@ -149,8 +141,6 @@
 		margin-bottom: 40px;
 	}
 }
-
-// footer
 
 .bs-footer__icon {
 	@include breakpoint(mobileonly) {
