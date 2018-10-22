@@ -1,12 +1,21 @@
 .bs-content-wrapper {
 	display: flex;
 	height: calc(100vh - 90px);
+	overflow: hidden;
 }
 
 .bs-sidebar {
+	height: 100%;
 	flex: 0 0 200px;
-	overflow: hidden; // remove in future
 }	
+
+.bs-sidebar--visible {
+	display: block !important;
+	width: 100% !important;
+	overflow-y: scroll !important;
+	overflow-x: hidden;
+	height: calc(100% - 70px);
+}
 
 .bs-bottom-line {
 	height: 6px;

@@ -1,0 +1,159 @@
+@import 'base/breakpoints';
+
+// HEADER
+
+.bs-header,
+.bs-footer {
+	@include breakpoint(mobileonly) {
+		height: 35px;
+	}
+}
+
+.bs-header__title {
+	@include breakpoint(tablet) {
+		left: 20px;
+		transform: none;	
+	}
+}
+
+.bs-header__title-icon {
+	@include breakpoint(tablet) {
+		font-size: 18px;
+	}
+}
+
+.bs-header__title-text {
+	@include breakpoint(tablet) {
+		font-size: 18px;		
+	}
+
+	@include breakpoint(mobileonly) {
+		display: none;
+	}	
+}
+
+.bs-dots {
+	@include breakpoint(tablet) {
+		display: none;
+	}
+}
+
+.bs-header__nav {
+	@include breakpoint(mobileonly) {
+		justify-content: center;		
+	}
+}
+
+.bs-user {
+	@include breakpoint(mobileonly) {
+		width: 35px;
+		justify-content: center;
+		padding: 0;
+	}	
+}
+
+.bs-user__img {
+	@include breakpoint(mobileonly) {
+		width: 28px;
+		height: 28px;
+	}
+}
+
+.bs-user__name {
+	@include breakpoint(mobileonly) {
+		display: none;
+	}
+}
+
+.bs-user__chevron {
+	@include breakpoint(mobileonly) {
+		display: none;
+	}	
+}
+
+// sidebar
+
+.bs-sidebar {
+	@include breakpoint(tablet) {
+		display: none;
+		width: 0;
+		position: absolute;
+		z-index: 10;
+	}
+}
+
+// top content
+
+.bs-content__head-wrapper {
+	@include breakpoint(mobileonly) {
+		height: 50px;
+		font-size: 14px;
+		justify-content: center;
+	}
+}
+
+.bs-filters {
+	@include breakpoint(mobileonly) {
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.bs-filters__item {
+	@include breakpoint(mobileonly) {
+		text-align: center;
+
+		&:hover {
+			background-color: transparent;
+			color: #8c97b2;
+		}
+
+		&:nth-child(odd) {
+			margin-bottom: 3px;
+		}
+	}
+}
+
+.bs-search__input {
+	@include breakpoint(tablet) {
+		visibility: hidden;
+		width: 0;
+	}
+}
+
+// main content
+
+.bs-content-wrapper {
+	@include breakpoint(mobileonly) {
+		height: calc(100vh - 70px);
+	}
+}
+
+.bs-books-list {
+	@include breakpoint(phablet) {
+		justify-content: center;
+	}
+
+	@include breakpoint(mobileonly) {
+		height: calc(100% - 100px);
+		padding: 15px 0 0 15px;
+	}
+}
+
+.bs-books-list__item {
+	@include breakpoint(tablet) {
+		margin-bottom: 40px;
+	}
+}
+
+// footer
+
+.bs-footer__icon {
+	@include breakpoint(mobileonly) {
+		width: 45px;
+	}
+}

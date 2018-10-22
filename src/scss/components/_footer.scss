@@ -1,8 +1,10 @@
 .bs-footer {
+	position: relative;
+	z-index: 30;
 	display: flex;
 	justify-content: flex-end;
 	height: $footer-height;
-  background-color: #181e2c;
+	background-color: #181e2c;
 }
 
 .bs-footer__icons {
