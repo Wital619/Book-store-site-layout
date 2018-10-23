@@ -6,7 +6,11 @@
 
 .bs-sidebar {
 	flex: 0 0 200px;
-}	
+	background-color: $panel-bg-color;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
 
 aside.bs-sidebar--visible {
 	display: block;
@@ -32,6 +36,7 @@ aside.bs-sidebar--visible {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex: 0 0 120px;
 }
 
 .bs-btn--add-book {
@@ -50,7 +55,6 @@ aside.bs-sidebar--visible {
 }
 
 .bs-menu-list {
-	max-height: 114px;
 	overflow-y: scroll;
 }
 
@@ -80,7 +84,6 @@ aside.bs-sidebar--visible {
 }
 
 .bs-book-types-list {
-	max-height: 105px;
 	overflow-y: scroll;
 	padding: 15px 0;
 }
@@ -109,7 +112,6 @@ aside.bs-sidebar--visible {
 }
 
 .bs-actions-list {
-	max-height: 179px;
 	overflow-y: scroll;
 	background-color: $panel-bg-color;
 }
